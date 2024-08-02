@@ -16,7 +16,7 @@ load_dotenv()
 
 class CommercetoolsAgent:
     def __init__(self):
-        self.llm = ChatOpenAI(temperature=0, model="gpt-4o")
+        self.llm = ChatOpenAI(temperature=0, model="gpt-4o", openai_api_key=os.getenv("OPENAI_API_KEY"))
         self.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
         self.tools = self._setup_tools()
         self.agent = initialize_agent(
