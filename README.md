@@ -1,4 +1,4 @@
-# CommercetoolsAgent
+# commercetoolsAgent
 
 This basic example is a Python-based conversational AI agent that interfaces with the commercetools GraphQL API. It uses LangChain for agent functionality and Gradio for the user interface.
 

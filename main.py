@@ -33,7 +33,7 @@ class CommercetoolsAgent:
             Tool(
                 name="CommercetoolsGraphQL",
                 func=self._query_commercetools,
-                description="Use this tool to query the Commercetools GraphQL API for customer information."
+                description="Use this tool to query the commercetools GraphQL API for customer information."
             )
         ]
 
@@ -81,7 +81,7 @@ class CommercetoolsAgent:
 
     def launch_gradio_interface(self):
         with gr.Blocks() as demo:
-            chatbot = gr.Chatbot()
+            chatbot = gr.Chatbot(avatar_images=["images/user.png", "images/ct.png"])
             msg = gr.Textbox()
             clear = gr.Button("Clear")
 
